@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "datatables.net": "^1.13.4",
+    "datatables.net-autofill-dt": "^2.5.3",
+    "datatables.net-dt": "^1.13.4"
+  },
+  "name": "sanaprog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
