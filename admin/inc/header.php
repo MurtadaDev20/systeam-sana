@@ -117,9 +117,9 @@ if (!isset($_SESSION['username']) || (trim($_SESSION['username']) == '')) {
 
         .dataTables_length {
             /* background: #696cff; */
-            border: 1px solid #696cff;
+            /* border: 1px solid #696cff; */
             border-radius: 10px;
-            color: #696cff !important;
+            color: gray !important;
             padding: 9px;
             font-size: 14px;
             font-weight: bold;
@@ -127,7 +127,7 @@ if (!isset($_SESSION['username']) || (trim($_SESSION['username']) == '')) {
         }
 
         .dataTables_length select {
-            color: #696cff !important;
+            color: gray !important;
             border-radius: 30px !important;
         }
 
@@ -138,9 +138,31 @@ if (!isset($_SESSION['username']) || (trim($_SESSION['username']) == '')) {
 
         .dt-button {
             background: transparent;
-            border: 1px solid #696cff;
-            border-radius: 10px;
-            color: #696cff;
+            border: 1px solid gray;
+            /* border-radius: 10px; */
+            color: gray;
             font-weight: bold;
+            transition: 0.3s ease-in;
+        }
+
+        .dt-button:hover {
+            background: transparent;
+            background-color: #696cff;
+            border: 1px solid #696cff;
+            /* border-radius: 10px; */
+            color: white;
+            font-weight: bold;
+
+        }
+
+        a.paginate_button.current {
+            background: #696cff !important;
+            color: white !important;
+            border: none !important;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            color: white !important;
         }
     </style>
